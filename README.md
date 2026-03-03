@@ -1,18 +1,51 @@
 # React + Vite
+Overview
+modern security monitoring dashboard built with React 19 and Vite. It delivers enterprise-grade security monitoring with real-time vulnerability detection. Watch live as AI-powered agents spider your applications, test injection vectors, and surface critical findings — all within an elegant, responsive interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
 
-Currently, two official plugins are available:
+🔴 Live scan console with streaming activity logs
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📊 Severity-based metrics (Critical / High / Medium / Low)
 
-## React Compiler
+🎯 Detailed scan view with step-by-step progress tracking
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+🔔 Toast notifications for scan events
 
-Note: This will impact Vite dev & build performances.
+🌓 Dark/Light mode with system preference detection
 
-## Expanding the ESLint configuration
+📱 Fully responsive (desktop, tablet, mobile)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+⚡ React Compiler enabled for optimized performance
+
+Tech Stack
+React 19
+Vite
+Tailwind CSS (with dark mode support)
+Context API (theme management)
+Vercel (deployment)
+
+Installation
+# Clone the repository
+git clone https://github.com/Sandeepit8048/LiveDashboad.git
+
+# Navigate into the project
+cd LiveDashboad
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+Deployment
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+
+Live Demo: https://live-dashboad.vercel.app/
+
+Source Code: https://github.com/Sandeepit8048/LiveDashboad
