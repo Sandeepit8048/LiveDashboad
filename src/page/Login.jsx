@@ -89,12 +89,12 @@ export default function LoginPage({ onLogin }) {
               { icon: "1", label: "Effortlessly spider and map targets to uncover hidden security flaws" },
               { icon: "2", label: "Deliver high-quality, validated findings in hours, not weeks." },
               { icon: "3", label: "Generate professional, enterprise-grade security reports automatically." },
-            ].map((f) => (
-              <div key={f.label} className="flex items-center gap-3">
+            ].map((item) => (
+              <div key={item.label} className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-sm flex-shrink-0">
-                  {f.icon}
+                  {item.icon}
                 </div>
-                <span className="text-zinc-300 text-sm">{f.label}</span>
+                <span className="text-zinc-300 text-sm">{item.label}</span>
               </div>
             ))}
           </div>
