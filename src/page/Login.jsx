@@ -78,20 +78,17 @@ export default function LoginPage({ onLogin }) {
         <div className="relative space-y-8">
           <div>
             <h1 className="text-5xl font-black text-white leading-tight tracking-tight">
-              Attack surface<br />
-              <span className="text-teal-400">intelligence</span>
+              Expert Level Cybersecurity<br />
+              <span className="text-teal-400">in hours not weeks</span>
             </h1>
-            <p className="mt-4 text-zinc-400 text-base leading-relaxed max-w-sm">
-              Continuous security scanning powered by autonomous agents. Find vulnerabilities before attackers do.
-            </p>
+          
           </div>
 
           <div className="space-y-3">
             {[
-              { icon: "1", label: "Parallel scan agents with real-time results" },
-              { icon: "2", label: "DAST, SAST, and API security in one platform" },
-              { icon: "3", label: "CVSS-based severity scoring and remediation" },
-              { icon: "4", label: "Integrates with GitHub" },
+              { icon: "1", label: "Effortlessly spider and map targets to uncover hidden security flaws" },
+              { icon: "2", label: "Deliver high-quality, validated findings in hours, not weeks." },
+              { icon: "3", label: "Generate professional, enterprise-grade security reports automatically." },
             ].map((f) => (
               <div key={f.label} className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-sm flex-shrink-0">
@@ -104,7 +101,7 @@ export default function LoginPage({ onLogin }) {
         </div>
 
         <div className="relative text-xs text-zinc-600">
-          © 2026 ABC Private Limited
+         <h2>Rate 4.5/5.0</h2> <p>(100k+ reviews)</p>
         </div>
       </div>
 
@@ -113,7 +110,7 @@ export default function LoginPage({ onLogin }) {
         <div className={`w-full max-w-md rounded-2xl border p-8 shadow-2xl ${dark ? "bg-[#161616] border-zinc-800" : "bg-white border-zinc-200"}`}>
           <div className="mb-7">
             <h2 className={`text-2xl font-bold ${dark ? "text-white" : "text-zinc-900"}`}>Create your account</h2>
-            <p className="text-sm text-zinc-500 mt-1">Start securing your infrastructure today</p>
+            {/* <p className="text-sm text-zinc-500 mt-1">Start today</p> */}
           </div>
 
           <div className="space-y-4">
