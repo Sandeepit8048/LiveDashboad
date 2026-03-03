@@ -37,7 +37,7 @@ export default function LoginPage({ onLogin }) {
     }`;
 
   return (
-    <div className={`min-h-screen flex ${dark ? "bg-[#0F0F0F]" : "bg-white"}`}>
+    <div className={`min-h-screen flex ${dark ? "bg-[#0F0F0F]" : "bg-[#F5F5F5]  "}`}>
       {/* Theme toggle */}
       <button
         onClick={toggle}
@@ -61,7 +61,7 @@ export default function LoginPage({ onLogin }) {
           className="absolute inset-0 opacity-[0.03]"
           style={{
             backgroundImage:
-              "linear-gradient(rgba(12,200,168,1) 1px, transparent 1px), linear-gradient(90deg, rgba(12,200,168,1) 1px, transparent 1px)",
+              "linear-gradient(rgb(88, 94, 93) 1px, transparent 1px), linear-gradient(90deg, rgb(12, 12, 12) 1px, transparent 1px)",
             backgroundSize: "48px 48px",
           }}
         />
@@ -69,9 +69,9 @@ export default function LoginPage({ onLogin }) {
         <div className="relative">
           <div className="flex items-center gap-3 mb-2">
             <div className="w-10 h-10 rounded-xl bg-teal-500 flex items-center justify-center text-black font-black text-lg">
-              F
+              LP
             </div>
-            <span className="text-white font-bold text-xl tracking-tight">Fenrir Security</span>
+            <span className="text-white font-bold text-xl tracking-tight">Login Page</span>
           </div>
         </div>
 
@@ -88,10 +88,10 @@ export default function LoginPage({ onLogin }) {
 
           <div className="space-y-3">
             {[
-              { icon: "⚡", label: "Parallel scan agents with real-time results" },
-              { icon: "⬡", label: "DAST, SAST, and API security in one platform" },
-              { icon: "◎", label: "CVSS-based severity scoring and remediation" },
-              { icon: "☁", label: "Integrates with GitHub, Jira, and Slack" },
+              { icon: "1", label: "Parallel scan agents with real-time results" },
+              { icon: "2", label: "DAST, SAST, and API security in one platform" },
+              { icon: "3", label: "CVSS-based severity scoring and remediation" },
+              { icon: "4", label: "Integrates with GitHub" },
             ].map((f) => (
               <div key={f.label} className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-teal-500/10 border border-teal-500/20 flex items-center justify-center text-teal-400 text-sm flex-shrink-0">
@@ -104,7 +104,7 @@ export default function LoginPage({ onLogin }) {
         </div>
 
         <div className="relative text-xs text-zinc-600">
-          © 2025 Fenrir Security Private Limited
+          © 2026 ABC Private Limited
         </div>
       </div>
 
@@ -123,7 +123,7 @@ export default function LoginPage({ onLogin }) {
                 <label className={`block text-xs font-medium mb-1.5 ${dark ? "text-zinc-400" : "text-zinc-600"}`}>First name</label>
                 <input
                   className={inputCls("firstName")}
-                  placeholder="Arjun"
+                  placeholder="User-Name"
                   value={form.firstName}
                   onChange={(e) => { setForm({ ...form, firstName: e.target.value }); setErrors({ ...errors, firstName: "" }); }}
                 />
@@ -133,7 +133,7 @@ export default function LoginPage({ onLogin }) {
                 <label className={`block text-xs font-medium mb-1.5 ${dark ? "text-zinc-400" : "text-zinc-600"}`}>Last name</label>
                 <input
                   className={inputCls("lastName")}
-                  placeholder="Kumar"
+                  placeholder="lastName"
                   value={form.lastName}
                   onChange={(e) => { setForm({ ...form, lastName: e.target.value }); setErrors({ ...errors, lastName: "" }); }}
                 />
@@ -146,7 +146,7 @@ export default function LoginPage({ onLogin }) {
               <input
                 type="email"
                 className={inputCls("email")}
-                placeholder="arjun@company.io"
+                placeholder="XYZ@gmail.com"
                 value={form.email}
                 onChange={(e) => { setForm({ ...form, email: e.target.value }); setErrors({ ...errors, email: "" }); }}
               />
@@ -209,9 +209,9 @@ export default function LoginPage({ onLogin }) {
             {/* Social buttons */}
             <div className="flex gap-2">
               {[
-                { icon: "🍎", label: "Apple" },
-                { icon: "G", label: "Google" },
-                { icon: "f", label: "Meta" },
+                {  label: "Apple" },
+                {  label: "Google" },
+                { label: "Meta" },
               ].map((s) => (
                 <button
                   key={s.label}

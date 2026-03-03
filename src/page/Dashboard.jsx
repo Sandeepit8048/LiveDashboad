@@ -35,7 +35,7 @@ export default function DashboardPage({ onScanClick, addToast }) {
         {/* Header */}
         <div className={`sticky top-0 z-10 flex items-center justify-between px-6 h-16 border-b backdrop-blur-md ${dark ? "bg-[#0F0F0F]/90 border-zinc-800" : "bg-white/90 border-zinc-200"}`}>
           <div>
-            <h1 className={`font-bold text-lg ${dark ? "text-white" : "text-zinc-900"}`}>Security Dashboard</h1>
+            <h1 className={`font-bold text-lg ${dark ? "text-white" : "text-zinc-900"}`}>Main Dashboard</h1>
             <p className="text-xs text-zinc-500">Organization overview · Last updated just now</p>
           </div>
           <div className="flex items-center gap-2">
